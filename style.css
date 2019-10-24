@@ -1,6 +1,12 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
 
 /*
  BARVY
@@ -24,10 +30,131 @@ body {
 }
 
 .obal {
-    width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
-    margin: 0 auto; /* pruh je na stránce vycentrovaný */
+    width: 960px;
+    /* obsah stránky je omezený do pruhu širokého 960px */
+    margin: 0 auto;
+    /* pruh je na stránce vycentrovaný */
     background: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
+
+.hlavicka {
+    position: relative;
+    left: 0;
+    top: 0;
+    color: #25133d;
+    margin: 0;
+}
+
+.apka {
+    font-weight: 600;
+    font-variant: small-caps;
+    font-size: larger;
+}
+
+li {
+    display: inline-block;
+    padding: 0;
+    margin: 15px;
+}
+
+.telo {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.barevny {
+    display: flex;
+    flex-direction: row;
+    margin: 0 -30px;
+    background-image: image/pozadi.csv;
+}
+
+/* to jsem zkoušela vypnout barvu pozadí bílou, aby prosvítal obrázek pozadí, ale nezdařiolo se */
+
+.nazev {
+    margin: 0;
+}
+
+h1 {
+    font-size: 75px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.slogan {
+    width: 80%;
+    margin: 0 0 40px 0;
+}
+
+h2 {
+    font-weight: 100;
+    margin: 0;
+    font-size: 35px;
+}
+
+.tlacitka {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.tlacitko1 {
+    padding: 0;
+    border: solid 1px black;
+    border-radius: 15px;
+    background-color: #48418e;
+    margin-right: 15px;
+    flex-basis: 40%;
+}
+
+.tlacitko2 {
+    padding: 0;
+    border: solid 1px black;
+    border-radius: 15px;
+    flex-basis: 40%;
+}
+
+.levy {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    margin: 0 30px;
+}
+
+.pravy {
+    position: relative;
+    line-height: 0;
+}
+
+.bily {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    color: #25133d;
+    margin: 30px -30px;
+}
+
+p {
+    margin: 20px;
+}
+
+.paticka {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color: #25133d;
+    color: white;
+    margin: 0 -30px -30px -30px;
+    padding: 0;
+}
+
+h4 {
+    margin: 5px;
+    font-weight: 200;
+}
