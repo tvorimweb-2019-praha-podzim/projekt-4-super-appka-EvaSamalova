@@ -63,17 +63,16 @@ li {
 .telo {
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 0 30px;
 }
 
 .barevny {
     display: flex;
     flex-direction: row;
     margin: 0 -30px;
-    background-image: image/pozadi.csv;
+    background-image: url(images/pozadi.jpg);
+    color: #e5e5e5;
 }
-
-/* to jsem zkoušela vypnout barvu pozadí bílou, aby prosvítal obrázek pozadí, ale nezdařiolo se */
 
 .nazev {
     margin: 0;
@@ -157,4 +156,12 @@ p {
 h4 {
     margin: 5px;
     font-weight: 200;
+}
+
+a{
+    text-decoration: none;
+}
+
+.tlacitka a:hover {
+    background-color: #48418e;
 }
