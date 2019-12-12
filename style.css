@@ -46,6 +46,7 @@ body {
     top: 0;
     color: #25133d;
     margin: 0;
+    padding: 0;
 }
 
 .apka {
@@ -53,11 +54,15 @@ body {
     font-variant: small-caps;
     font-size: larger;
 }
+ul.menu {
+    margin: 0;
+    padding: 0;
+}
 
 li {
     display: inline-block;
-    padding: 0;
-    margin: 15px;
+    padding: 15px 40px;
+    margin: 0;
 }
 
 .telo {
@@ -95,6 +100,12 @@ h2 {
     font-size: 35px;
 }
 
+h3 {
+margin: 0;
+color: white;
+font-weight: normal;
+}
+
 .tlacitka {
     display: flex;
     flex-direction: row;
@@ -102,17 +113,16 @@ h2 {
 }
 
 .tlacitko1 {
-    padding: 0;
-    border: solid 1px black;
+    padding: 15px;
+    border: solid 1px white;
     border-radius: 15px;
-    background-color: #48418e;
     margin-right: 15px;
     flex-basis: 40%;
 }
 
 .tlacitko2 {
-    padding: 0;
-    border: solid 1px black;
+    padding: 15px;
+    border: solid 1px white;
     border-radius: 15px;
     flex-basis: 40%;
 }
@@ -147,7 +157,7 @@ p {
     bottom: 0;
     left: 0;
     text-align: center;
-    background-color: #25133d;
+    background-color: #48418e;
     color: white;
     margin: 0 -30px -30px -30px;
     padding: 0;
@@ -162,6 +172,6 @@ a{
     text-decoration: none;
 }
 
-.tlacitka a:hover {
+.tlacitko1:hover, .tlacitko2:hover {
     background-color: #48418e;
 }
